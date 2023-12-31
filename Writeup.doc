@@ -1,0 +1,25 @@
+git hub:https://github.com/Sahithi-Kasarla/Phase3-Project2
+Step 1 : I created a master page using webforms.
+Step 2 : Then created Student.aspx, Course.aspx and Teacher.aspx webforms with school
+master page.
+Step 3 : I created hyperlinks to redirect to the respected page when a button in the nav bar is
+clicked.
+Step 4 : I created a connection between database to display the data’s which I created for this
+project.
+Step 5 : End of the program
+
+or
+
+1:Create a database Rainbow school.Create tables for classs, Subject,students(in students add the reference  if classname from class,subjectName from subject)
+2:Create a new project.Give a name in vs. Select MVC. CLick create.
+3:open solution Explorer right click on models selct ADO.net entity framework->Ef database(1st one)-> new connecton->
+   selct the database from the sql server.select database from drop down menu(click on tursted liscence in some laptops).Test connection-> select the version(6.0)->select the tables(should have class,subject and students)->click ok.
+   now the connection is set between the database and vs
+4:In solution Explorer right click on controller-> add->add new item -> select entity framework(3rd one).
+   Give model name as class(select it from drop doen menu). below that in the drop down select rainboe context.
+5:Repeat the above step for students and Subjects.  
+6:you can add the id , in the view->class->index.cshtml. Repeat the same for Student and subject.
+7:In the view->create.cshtml, in the create method add return View(new Class());.Repeat the same for student and class.
+8:In the shared-> layout.cshtml, add the class,Index,Classes (in line 20).Repeat the same for Student and Subject.
+9:In the place of application name write school Management.
+10:Run the Program.
